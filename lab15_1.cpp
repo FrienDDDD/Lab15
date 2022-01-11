@@ -4,6 +4,28 @@ using namespace std;
 template <typename T>
 void insertionSort(T d[],int N){
 
+
+	
+	double temp ;
+ 	for(int j = 1;j < N;j++){
+		for(int i = 0;i < j ;i++){
+			if(d[i] < d[j] ){
+				temp = d[i];
+				d[i] = d[j] ;
+				d[j] = temp ;		
+			}
+	
+		}
+	cout << "Pass " << j << ":" ;
+	for(int k = 0;k < N;k++){
+		cout << d[k] << " " ;
+	}
+	cout << "\n" ;
+	
+	}
+	
+	
+
 }
 
 int main(){
@@ -17,3 +39,4 @@ int main(){
 	cout << "\nSorted Array:";
 	for(int i = 0; i < 10; i++) cout << a[i] << " ";	
 }
+
